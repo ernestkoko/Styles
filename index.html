@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
----
-layoyut: test
----
+<div class="home" >
 <div class="full-hero hero-home">
-  <h1>I'm an h1</h1>
+  <div class="hero-content">
+  <h1>CODE DANGEROUSLY</h1>
   <ul class="social-list">
     <li>
       <a href="http://example.com/" class="social-link">Fb</a>
@@ -17,6 +16,7 @@ layoyut: test
       <a href="http://example.com/" class="social-link">Gh</a>
     </li>
   </ul>
+  </div>
 </div>
 
 <div class="home-callout">
@@ -48,6 +48,27 @@ layoyut: test
       allows web pages to be styled. Other related tutorials can be found at
       <a href="https://learnenough.com/">learnenough.com</a>.
     </p>
+  </div>
+</div>
+<div class="home-section">
+  <h4>Most recent post</h4>
+  <div class="blog-posts">
+    <header class="post-header">
+      <h2>
+        <a href="{{ site.posts.first.url }}">
+        {{ site.posts.first.title }}</a>
+      </h2>
+      <div class="post-byline">
+        <img src="{{ site.posts.first.gravatar }}">
+        <a href="{{ site.posts.first.authorTwitter }}"
+        class="social-link">Tw</a>
+        by: {{ site.posts.first.author }}
+        <span> - {{ site.posts.first.date | date: '%B %d, %Y' }}</span>
+      </div>
+    </header>
+    <div class="posts-image"
+    style="background-image:url({{ site.posts.first.postHero }})"></div>
+    {{ site.posts.first.excerpt }}
   </div>
 </div>
 
@@ -109,4 +130,12 @@ layoyut: test
       <div class="bio-copy">
         <p>
           You may have seen him shredding guitar live with Capital Cities on
-          Jimmy Kimmel, Conan, or The Ellen Show, but rest assured Ni
+          Jimmy Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true
+          nerd at heart. He's just as happy shredding well-spec'd lines of code
+          from a tour bus as he is from his kitchen table.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
