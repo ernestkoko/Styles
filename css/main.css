@@ -20,7 +20,77 @@ summary, time, mark, audio, video {
     box-shadow: none;
     padding: 0;
   }
+
+  /* HEADER STYLES */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+  /* HOME STYLES */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1;
+  }
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  /* BLOG STYLES */
   .post-aside {
+    display: none;
+  }
+  /* GALLERY STYLES */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
+}
+/* BLOG STYLES */
+  .blog-recent {
+    display:none;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 600px){
+  .half-hero {
     display: none;
   }
 }
@@ -183,16 +253,7 @@ h2 ~ p {
   color: #ccc;
 }
 /* COLUMN STYLES */
-.col-two {
-  display: flex;
-}
-.col-two .col-aside {
-  flex: 0 0 20em;
-  order: 1;
-}
-.col-two .col-content {
-  flex: 1;
-}
+
 .col-three {
   display: flex;
   flex: 1;
@@ -212,6 +273,40 @@ h2 ~ p {
 }
 .col-three .col-aside {
   flex: 0 1 20em;
+}
+
+.col-two {
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1;
+}
+.gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+/* PAGE STYLES */
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+}
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
+  margin-bottom: 1em;
 }
 
 /* HERO STYLES */
@@ -332,22 +427,6 @@ h2 ~ p {
   flex: 0 0 45em;
   font-size: 0.8rem;
   padding: 0 3vw;
-}
-.page {
-  margin: 10vh auto 15vh;
-  max-width: 980px;
-  width: 85vw;
-}
-.page h1 {
-  font-size: 3em;
-  margin-bottom: 1em;
-  text-align: center;
-}
-.page h2 {
-  margin-bottom: 0.5em;
-}
-.page h4 {
-  margin-bottom: 1em;
 }
 
 /* BIO STYLES */
